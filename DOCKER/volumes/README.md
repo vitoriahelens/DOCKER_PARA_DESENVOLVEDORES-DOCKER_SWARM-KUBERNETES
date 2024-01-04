@@ -18,4 +18,4 @@
 
 <img src="images/inserindovolumebind.png"/>
 
-<img src="images/volumebindcriado.png"/>
+<img src="images/volumebindsalvo.png"/>
