@@ -1,1 +1,1 @@
-Repositório pessoal para manter guardado o material prático de cursos que faço. 
+Repositório pessoal para manter guardado as aulas práticas de cursos que faço. 
