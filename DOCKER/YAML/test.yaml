@@ -1,0 +1,43 @@
+nome: "Vitoria"
+idade: 22
+
+#Esse é um bloco com informações dependentes de um objeto
+objeto: 
+  versao: 2
+  arquivo: "teste.txt"
+
+##DADOS NUMERICOS
+inteiro: 12
+float: 12.4 
+
+##STRINGS
+sem_aspas: este eh um texto valido
+com_aspas: "e este tambem"
+
+##VALORES NULOS (printa como None)
+nulo: ~
+nulo_2: null
+
+##BOOLEANOS
+verdadeiro_1: True
+verdadeiro_2: On
+
+falso_1: false
+falso_2: off
+
+##LISTAS (Arrays)
+lista_1: [1, 2, 3, vivi, false]
+lista_2:
+  - 1
+  - 2
+  - 3
+  - vivi
+  - on
+
+##DICIONARIOS (simula objetos ou listas com chave e valor)
+obj: {a: 1, b: vivi, 3: off}
+obj_2:
+  a: 1
+  b: 2
+  objeto_interno:
+    x: 2
