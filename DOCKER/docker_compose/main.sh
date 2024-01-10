@@ -6,5 +6,7 @@ chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 docker compose version
 
 #EXECUTANDO O COMPOSE
-docker compose up
-localhost:8000 #Vai aparecer um wordpress instalado
+docker compose up -d #roda em modo detached (background)
+localhost:8000 #vai aparecer o wordpress instalado
+docker compose down #para o container
+docker compose ps #mostra serviços que sobem ao rodar o compose
