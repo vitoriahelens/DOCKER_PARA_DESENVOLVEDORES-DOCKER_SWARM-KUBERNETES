@@ -1,3 +1,5 @@
+<img src="compose.png" alt="150" width="150"/>
+
 # Docker Compose
 
 > O Docker Compose é uma ferramenta para rodar multiplos containers
