@@ -10,7 +10,7 @@
 
 #### **Aqui foram criados os diferentes tipos de volume**
 
-##### An^nimo
+##### Anônimo
 
 <img src="images/volumeanonimocriado.png"/>
 
