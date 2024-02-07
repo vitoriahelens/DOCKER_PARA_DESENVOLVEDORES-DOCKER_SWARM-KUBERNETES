@@ -12,6 +12,9 @@ docker ps
 docker login -u vitoriahelens
 docker push vitoriahelens/flask-kub
 
+###STARTANDO O MINIKUBE
+minikube start --drive=docker
+
 ###CRIANDO O DEPLOYMENT
 kubectl create deployment flask-deployment --image=vitoriahelens/flask-kub
 minikube dashboard --url #Abre a URL
@@ -109,3 +112,21 @@ docker build -t vitoriahelens/flask-kub:2 .
 docker push vitoriahelens/flask-kub:2
 # dashboard > pods > clica na pod mais antiga > containers > copia o nome
 kubectl set image deployment/flask-deployment flask-kub=vitoriahelens/flask-kub:2 
+
+###VERIFICANDO UMA ALTERAÇÃO
+kubectl rollout status deployment/flask-deployment
+
+###VOLTANDO UMA ALTERAÇÃO
+kubectl rollout undo deployment/flask-deployment
+
+###DELETANDO UM SERVIÇO
+kubectl delete service flask-deployment
+######################################
+# service "flask-deployment" deleted #
+######################################
+
+###DELETANDO UM DEPLOYMENT
+kubectl delete deployment flask-deployment
+##############################################
+# deployment.apps "flask-deployment" deleted #
+##############################################
