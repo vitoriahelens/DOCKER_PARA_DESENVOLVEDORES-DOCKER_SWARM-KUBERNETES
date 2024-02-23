@@ -16,8 +16,14 @@ O Docker proporciona mais velocidade na configuração do ambiente de um dev, ga
 ### **O que são containers:**
 
 É um pacote de código que pode executar uma ação, como por exemplo, rodar uma aplicação de Node.js, Python e etc;
-Ou seja, no lugar de rodar localmente, o projeto será executado dentro do container criado. 
-Para poder rodar, eles utilizam imagens, onde é configurado como ele vai funcionar.
+
+Container == Isolamento
+
+Você isola toda a aplicação dentro da máquina, de modo que várias aplicações podem rodar na mesma máquina, e o ideal é que outras aplicações não dividam o recurso, ou não se enxerguem.
+
+- **namespaces (Módulo do Kernel Linux):** Responsável por fazer o isolamento de todos os recursos da aplicação. Ex.: Filesystem, Processos, Network, Usuários e etc.
+- **cgroups (Módulo do Kernel Linux):** Responsável por fazer o isolamento/limitação dos recursos da máquina. Ex.: CPU, memória e etc.
+- **chroot:** é uma operação que altera o diretório raiz aparente para o processo atual de execução e seus filhos.
 
 ### **Para construir a imagem do container que será executado é necessário um Dockerfile**
 #### [Dockerfile](https://github.com/vivihelen04/estudos/tree/main/DOCKER/Dockerfile) 
@@ -31,7 +37,7 @@ Para poder rodar, eles utilizam imagens, onde é configurado como ele vai funcio
     - **Container** é uma aplicação que serve para um determinado fim, não possui sistema operacional, seu tamanho é de alguns mbs
     - **VM** possui sistema operacional próprio, pode executar diversas funções ao mesmo tempo
     
-    *Containers acabam gastando menos recursos para serem executados, por causa de seu uso específico*
+    *Quando estamos utilizando máquinas virtuais, nós emulamos um novo sistema operacional e virtualizamos todo o seu hardware utilizando mais recursos da máquina host, o que não ocorre quando utilizamos containers, pois os recursos são compartilhados. O ganho óbvio disso é a capacidade de rodar mais containers em um único host, se comparado com a quantidade que se conseguiria com máquinas virtuais.*
 
 ```docker
 ##EXECUTANDO UM CONTAINER
