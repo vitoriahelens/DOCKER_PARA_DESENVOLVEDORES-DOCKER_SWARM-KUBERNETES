@@ -1,4 +1,4 @@
-<img src="/KUBERNETES/images/kubernets.png" alt="150" width="150"/>
+<img src="kubernets.png" alt="150" width="150"/>
 
 ### **O que é Kubernetes?**
 
