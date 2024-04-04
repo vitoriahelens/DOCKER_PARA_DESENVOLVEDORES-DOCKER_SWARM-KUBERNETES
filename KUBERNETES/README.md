@@ -1,20 +1,19 @@
+<img src="/KUBERNETES/images/kubernets.png" alt="150" width="150"/>
+
 ### **O que é Kubernetes?**
 
 O Kubernetes é uma ferramenta de orquestração de containers que permite a criação de múltiplos containers em diferentes máquinas (nodes/nós). Ele escala projetos formando um cluster e gerencia serviços garantindo que as aplicações sejam executadas sempre da mesma forma.
 
 **CONCEITOS FUNDAMENTAIS:**
 
-**Control Plane:** Onde é gerenciado o controle dos processos dos Nodes
 
-**Nodes**: Máquinas que são gerenciadas pelo Control Plane
+**Control Plane:** Onde é gerenciado o controle dos processos dos Nodes </br>
+**Nodes**: Máquinas que são gerenciadas pelo Control Plane </br>
+**Deployment**: A execução de uma imagem/projeto em um Pod </br>
+**Pod**: Um ou mais containers que estão em um Node </br>
+**Services**: Serviços que expõe os Pods ao mundo externo </br>
+**kubectl**: Cliente da linha de comando para o Kubernetes </br></br>
 
-**Deployment**: A execução de uma imagem/projeto em um Pod
-
-**Pod**: Um ou mais containers que estão em um Node
-
-**Services**: Serviços que expõe os Pods ao mundo externo
-
-**kubectl**: Cliente da linha de comando para o Kubernetes
 
 **DEPENDENCIAS NECESSÁRIAS:**
 
