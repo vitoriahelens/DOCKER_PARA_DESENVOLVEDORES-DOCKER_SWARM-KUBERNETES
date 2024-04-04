@@ -26,7 +26,7 @@ Você isola toda a aplicação dentro da máquina, de modo que várias aplicaç�
 - **chroot:** é uma operação que altera o diretório raiz aparente para o processo atual de execução e seus filhos.
 
 ### **Para construir a imagem do container que será executado é necessário um Dockerfile**
-#### [Dockerfile](https://github.com/vivihelen04/estudos/tree/main/DOCKER/Dockerfile) 
+#### [Dockerfile](/DOCKER/Dockerfile) 
 
 **CONCEITOS**
 
@@ -175,7 +175,7 @@ docker cp container:/diretorionocontainer/arquivo ./pastadestino/
     ```
 
 ### **Para criar um ambiente de desenvolvimento subindo banco de dados e a aplicação é utilizado o Docker Compose**
-#### [Docker Compose](https://github.com/vivihelen04/estudos/tree/main/DOCKER/DockerCompose) 
+#### [Docker Compose](/DOCKER/DockerCompose) 
 
 ### **Para orquestrar containers a nível de Infraestrutura, é utilizado o Docker Swarm**
-#### [Docker Swarm](https://github.com/vivihelen04/estudos/tree/main/DOCKER/DockerSwarm) 
+#### [Docker Swarm](/DOCKER/DockerSwarm) 
